@@ -1,62 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Mini Game</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-	<div class="banner">
-			<div class="navbar">
-				<img src="logos.png" href="index.html" class="logo">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="form.html">Form</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="minigame.html">Mini Game</a></li>
-				</ul>
-			</div>
-			<div class="container">
-				<h2>Memory Game</h2>
-				<div class="game"></div>
-				<button class="reset">Reset Game</button>
-			</div>
+<!DOCTYPE html> 		 <!-- this defines the document page -->
+<html lang="en">		  <!-- root element of the HTML page and set to english language-->
+	<head> 		 <!-- contains the meta imformation about the page -->
+		<meta charset="UTF-8"> 		 <!-- this defines the information in the document -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 		 <!-- this defines the information in the document -->
+		<title>Mini Game</title> 		 <!-- specifies the title of the page -->
+		<link rel="stylesheet" href="style.css">  		<!-- this link the css page-->
+	</head> 		 <!-- head end tag -->
+	<body> 		 <!-- defines the body of the document -->
+	<div class="banner"> 		 <!-- this is the banner section of the webpage -->
+			<div class="navbar">		<!-- this is the navbar section of the webpage -->
+				<img src="logos.png" href="index.html" class="logo">		<!-- brings in an image -->
+				<ul>		<!-- this is an unordered list tag -->
+					<li><a href="index.html">Home</a></li>		<!-- list item -->
+					<li><a href="form.html">Form</a></li>		<!-- list item -->
+					<li><a href="gallery.html">Gallery</a></li>		<!-- list item -->
+					<li><a href="minigame.html">Mini Game</a></li>		<!-- list item -->
+				</ul>		<!-- end of unordered list -->
+			</div>		<!-- end navbar section -->
+			<div class="container">		<!-- start of the container -->
+				<h2>Memory Game</h2> 	 <!-- gives a large heading -->
+				<div class="game"></div>		<!-- this is the game -->
+				<button class="reset">Reset Game</button>		<!-- this is the reset button -->
+			</div>		<!-- end of container -->
 			
-			<script>
-				const emojis = ["🐟","🐟","🐳","🐳","🐡","🐡","🦞","🦞","🐙","🐙","🦈","🦈","🐚","🐚","🦀","🦀"];
-				var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
-				for ( var i =0; i<emojis.length; i++){
+			<script>		<!-- this is the start of the javascript  -->
+				const emojis = ["🐟","🐟","🐳","🐳","🐡","🐡","🦞","🦞","🐙","🐙","🦈","🦈","🐚","🐚","🦀","🦀"];		//declared images
+				var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);		//shuffle images	
+				for ( var i =0; i<emojis.length; i++){//game method
 					let box = document.createElement('div')
 					box.className = 'item';
 					box.innerHTML = shuf_emojis[i]
 					
-					box.onclick = function(){
+					box.onclick = function(){//clecking box method
 						this.classList.add('boxOpen')
-						setTimeout(function(){
-							if(document.querySelectorAll('.boxOpen').length > 1){
-							  if(document.querySelectorAll('.boxOpen')[0].innerHTML == document.querySelectorAll('.boxOpen')[1].innerHTML){
+						setTimeout(function(){//timeout function
+							if(document.querySelectorAll('.boxOpen').length > 1){//box flipping mehtod
+							  if(document.querySelectorAll('.boxOpen')[0].innerHTML == document.querySelectorAll('.boxOpen')[1].innerHTML){//start if method
 								document.querySelectorAll('boxOpen')[0].classList.add('boxMatch')
 								document.querySelectorAll('.boxopen')[1].classList.add('boxMatch')
 								
 								document.querySelectorAll('.boxopen')[1].classList.remove('boxOpen')
 								document.querySelectorAll('.boxopen')[0].classList.remove('boxOpen')
 								
-								if(document.querySelectorAll('.boxMatch').length == emojis.length){
+								if(document.querySelectorAll('.boxMatch').length == emojis.length){//if method
 									alert('win')
-								}
-							  } else {
+								}//end method
+							  } else {//else method
 								document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
 								document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
-							  }
-							}
-						},500)
-					}
+							  }//end else
+							}//end method
+						},500)//end timeout method
+					}//end box click method
 					
 					document.querySelector('.game').appendChild(box);
-				}
-			</script>
+				}//end method
+			</script>		<!-- end of the javascript -->
 			
-	</div>
-	</body>
-</html>
+	</div>		<!-- end banner sections -->
+	</body>  <!-- body end tag -->
+</html>  <!-- html end tag -->
