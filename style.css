@@ -1,4 +1,4 @@
-*{
+*{/*this is the hmtl/ body  */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,14 +7,14 @@
 	justify-content: center;
 	
 }
-.banner{
+.banner{/* this is the details of the banner*/
 	width: 100%;
 	height: 300vh;
 	background-color: #32a852 ;
 	background-size: cover;
 	background-position: center;
 }
-.navbar{
+.navbar{/* this is the details of the navbar*/
 	width: 85%;
 	margin: auto;
 	padding: 35px 0;
@@ -22,22 +22,22 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.logo{
+.logo{/* sizing of the logo*/
 	width: 120px;
 	cursor: pointer;
 }
-.navbar ul li{
+.navbar ul li{/* details and look of the navigation */
 	list-style: none;
 	display: inline-block;
 	margin: 0 20px;
 	position: relative;
 }
-.navbar ul li a{
+.navbar ul li a{/*deails and look of the navigation*/
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
 }
-.navbar ul li::after{
+.navbar ul li::after{/*deails and look of the navigation*/
 	content: '';
 	height: 3px;
 	width: 0;
@@ -47,10 +47,10 @@
 	bottom: -10px;
 	transition: 0.5s;
 }
-.navbar ul li:hover::after{
+.navbar ul li:hover::after{/*deails and look of the navigation*/
 	width: 100%;
 }
-.containers {
+.containers {/*the look of the form table*/
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -58,32 +58,32 @@
 	width: 400px;
 	max-width: 100%;
 }
-.header {
+.header {/*look of the header*/
 	border-bottom: 1px solid #f0f0f0;
 	background-color: #8e44ad;
 	padding: 20px 40px;
 }
 
-.header h2 {
+.header h2 {/*look of the header on the form*/
 	margin: 0;
 }
 
-.form {
+.form {/* look and details of the form*/
 	padding: 30px 40px;	
 }
 
-.form-control {
+.form-control {/*look and details of the form*/
 	margin-bottom: 10px;
 	padding-bottom: 20px;
 	position: relative;
 }
 
-.form-control label {
+.form-control label {/*look and details of the form label*/
 	display: inline-block;
 	margin-bottom: 5px;
 }
 
-.form-control input {
+.form-control input {/*looka nd details of the form input*/
 	border: 2px solid #f0f0f0;
 	border-radius: 4px;
 	display: block;
@@ -93,37 +93,37 @@
 	width: 100%;
 }
 
-.form-control input:focus {
+.form-control input:focus {/*look and details of the form input*/
 	outline: 0;
 	border-color: #777;
 }
 
-.form-control.success input {
+.form-control.success input {/*llok and details of the success form input*/
 	border-color: #2ecc71;
 }
 
-.form-control.error input {
+.form-control.error input {/*look and detail of the error form input*/
 	border-color: #e74c3c;
 }
 
-.form-control i {
+.form-control i {/*look and detail of the form*/
 	visibility: hidden;
 	position: absolute;
 	top: 40px;
 	right: 10px;
 }
 
-.form-control.success i.check-circle {
+.form-control.success i.check-circle {/*look and detail of success form*/
 	color: #2ecc71;
 	visibility: visible;
 }
 
-.form-control.error i.exclamation-circle {
+.form-control.error i.exclamation-circle {/*look and deatil of error form*/
 	color: #e74c3c;
 	visibility: visible;
 }
 
-.form-control small {
+.form-control small {/*look and detail of error message*/
 	color: #e74c3c;
 	position: absolute;
 	bottom: 0;
@@ -131,11 +131,11 @@
 	visibility: hidden;
 }
 
-.form-control.error small {
+.form-control.error small {/*look and detail of error message*/
 	visibility: visible;
 }
 
-.form button {
+.form button {/*look and detail about button*/
 	background-color: #8e44ad;
 	border: 2px solid #8e44ad;
 	border-radius: 4px;
@@ -147,7 +147,7 @@
 	margin-top: 20px;
 	width: 100%;
 }
-.container{
+.container{/*look and detail of game*/
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -158,13 +158,13 @@
 	padding: 40px 60px;
 }
 
-h2{
+h2{/*sizing of text*/
 	font-size: 15px;
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
-.reset{
+.reset{/*reset look and details*/
 	padding: 15px 20px;
 	color: #267c65;
 	background: #fff;
@@ -175,11 +175,11 @@ h2{
 	cursor: pointer;
 	font-weight: 600;
 }
-.reset:focus{
+.reset:focus{/*reset look and details*/
 	color: #fff;
 	background: #267c65;
 }
-.game{
+.game{/*game look and details*/
 	width: 430px;
 	height: 430px;
 	display: flex;
@@ -188,7 +188,7 @@ h2{
 	transform-style: preserve-3d;
 	perspective: 500px;
 }
-.item{
+.item{/*items look and details*/
 	position: relative;
 	width: 100px;
 	height: 100px;
@@ -200,10 +200,10 @@ h2{
 	transform: rotateY(180deg);
 	transition: 0.25s;
 }
-.item.boxOpen{
+.item.boxOpen{/*rotating form*/
 	transform: rotateY(0deg);
 }
-.item:after{
+.item:after{/*looka and detail of items*/
 	content: '';
 	position: absolute;
 	inset: 0;
@@ -212,6 +212,6 @@ h2{
 	transform: rotateY(0deg);
 	backface-visibility: hidden;
 }
-.boxOpen:after, .boxMatch:after{
+.boxOpen:after, .boxMatch:after{/*looka dn details of the rotation*/
 	transform: rotateY(180deg);
 }
