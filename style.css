@@ -52,11 +52,14 @@
 }
 .containers {/*the look of the form table*/
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 	width: 400px;
 	max-width: 100%;
+	position: relative;
+    left: 550px;
+	
 }
 .header {/*look of the header*/
 	border-bottom: 1px solid #f0f0f0;
@@ -69,7 +72,7 @@
 }
 
 .form {/* look and details of the form*/
-	padding: 30px 40px;	
+	padding: 35px 40px;	
 }
 
 .form-control {/*look and details of the form*/
@@ -164,7 +167,7 @@ h2{/*sizing of text*/
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
-.reset{/*reset look and details*/
+.reset{/*button look and details*/
 	padding: 15px 20px;
 	color: #267c65;
 	background: #fff;
@@ -214,4 +217,36 @@ h2{/*sizing of text*/
 }
 .boxOpen:after, .boxMatch:after{/*looka dn details of the rotation*/
 	transform: rotateY(180deg);
+}
+div.scroll-container {/*scroll container look and design*/
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 25px;
+}
+
+div.scroll-container img {/*image look and padding*/
+  padding: 10px;
+}
+h1, h2{/*spaceing*/
+	padding: 25px;
+}
+p{/*spaceing*/
+	padding: 25px;
+}
+.button{/*button look and details*/
+	padding: 15px 20px;
+	color: #267c65;
+	background: #fff;
+	border: none;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 600;
+	position: relative;
+    left: 550px;
+}
+.para{/*spaceing*/
+	padding: 25px;
 }
