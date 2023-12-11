@@ -9,7 +9,7 @@
 	<body> 		 <!-- defines the body of the document -->
 		<div class="banner"> 		 <!-- this is the banner section of the webpage -->
 			<div class="navbar">		<!-- this is the navbar section of the webpage -->
-				<img src="logos.png" href="index.html" class="logo">		<!-- brings in an image -->
+				<img src="logos.png" class="logo" onclick="document.location='index.html'">		<!-- brings in an image -->
 				<ul>		<!-- this is an unordered list tag -->
 					<li><a href="index.html">Home</a></li>		 <!-- list item -->
 					<li><a href="form.html">Form</a></li>		 <!-- list item -->	
@@ -17,6 +17,29 @@
 					<li><a href="minigame.html">Mini Game</a></li>		 <!-- list item -->
 				</ul>		<!-- end of unordered list -->
 			</div>		 <!-- end navbar section -->
+			<br> 		<!-- a gap in the paging -->
+			<div class="scroll-container">		<!-- scroll container -->
+				<img src="Beforeafter.jpg" alt="Before&After" width="345" height="345">
+				<img src="corals.jpg" alt="Coral" width="345" height="345">
+				<img src="help.jpg" alt="Helpers" width="345" height="345">
+				<img src="oceanaware.jpg" alt="OceanAware" width="345" height="345">
+				<img src="star.jpg" alt="Starfish" width="345" height="345">
+				<img src="turtle.jpg" alt="Turtle" width="345" height="345">
+			</div>		<!-- end of method-->
+			<br>		 <!-- a gap in the paging -->
+			<h1>Ocean Awareness</h1>		<!-- letter sizing -->
+			<h2>Impacts on Littering in our Oceans</h2><!-- letter sizing -->
+			<br>		<!-- a gap in the paging -->
+			<p>As you can see from these images that littering makes a huge negitive impact on our oceans.
+			Things are only going to get worse, but thats where you can help. Sign up today and help make a difference
+			and keep up to date with all the news </p>		<!-- paragraph information -->
+			<br>		<!-- a gap in the paging -->
+			<button class="button" type="button" onclick="document.location='form.html'">Create an Account</button> <!-- button element -->
+			<script>		<!-- start javeascript -->
+				img{
+					width: 100%;
+				}
+			</script>		<!-- end javascript-->
 		</div>		<!-- end banner sections -->
 	</body> 		 <!-- body end tag -->
 </html> 		 <!-- html end tag -->
